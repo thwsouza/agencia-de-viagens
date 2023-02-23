@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Agência de Viagens</title>
+  </head>
+  <body class="bg-slate-100 box-border">
+    <header>
+      <div
+        class="container flex py-2 lg:max-w-5xl xs:max-w-sm tablet:max-w-xl xs:mx-auto"
+      >
+        <img
+          class="w-8 xs:ml-8 tablet:ml-0"
+          src="/assets/imagens/local-logo.png"
+          alt=""
+        />
+        <h1 class="text-2xl font-light ml-2 text-purple-800">
+          Agência de Viagens
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div
+          class="pb-12"
+          style="
+            background: url('/assets/imagens/bahia.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div
+            class="container xs:max-w-sm mx-auto pt-12 tablet:max-w-xl lg:max-w-5xl"
+          >
+            <div class="bg-purple-800 flex items-center justify-center">
+              <img
+                class="h-9 mr-2 py-2"
+                src="/assets/imagens/aviao.png"
+                alt=""
+              />
+              <h3>Solicite um Orçamento</h3>
+            </div>
+
+            <div class="bg-white mx-auto tablet:max-w-xl lg:max-w-5xl">
+              <form
+                method="post"
+                action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/"
+              >
+                <h3 class="mx-4 pt-4 text-xl">Informe seus dados</h3>
+                <div
+                  class="flex flex-col justify-center py-2 space-y-3 tablet:max-w-3/4 mx-4 lg:max-w-5xl"
+                >
+                  <label for="name" class="block">Nome:</label>
+                  <div class="mt-1">
+                    <input
+                      type="text"
+                      name="nome"
+                      placeholder="Nome completo"
+                      class="border w-full border-gray-400 px-2 py-1"
+                    />
+                  </div>
+
+                  <label for="email" class="block">Email:</label>
+                  <div>
+                    <input
+                      type="text"
+                      name="email"
+                      placeholder="email@example.com"
+                      class="border w-full border-gray-400 px-2 py-1"
+                    />
+                  </div>
+
+                  <label for="tel" class="block">Celular:</label>
+                  <div>
+                    <input
+                      type="tel"
+                      name="celular"
+                      placeholder="(XX) XXXXX-XXXX"
+                      class="border w-full border-gray-400 px-2 py-1"
+                    />
+                  </div>
+
+                  <label for="date" class="block">Data da ida:</label>
+                  <div>
+                    <input
+                      type="date"
+                      name="data_ida"
+                      placeholder=""
+                      class="border w-full border-gray-400 px-2 py-1"
+                    />
+                  </div>
+
+                  <label for="date" class="block">Data da volta:</label>
+                  <div>
+                    <input
+                      type="date"
+                      name="data_volta"
+                      placeholder=""
+                      class="border w-full border-gray-400 px-2 py-1"
+                    />
+                  </div>
+
+                  <label for="origem" class="block">Origem</label>
+                  <div>
+                    <select
+                      name="origem"
+                      class="border w-full border-gray-400 px-2 py-1"
+                    >
+                      <option value="">Partindo de</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="CE">Fortaleza</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                    </select>
+                  </div>
+
+                  <label for="destino" class="block">Destino</label>
+                  <div>
+                    <select
+                      name="origem"
+                      class="border w-full border-gray-400 px-2 py-1"
+                    >
+                      <option value="">Indo para</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="CE">Fortaleza</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                    </select>
+                  </div>
+
+                  <label for="quarto">Quarto com cama infantil?</label>
+                  <div
+                    class="tablet:flex tablet:space-x-8 tablet:items-center lg:flex lg:space-x-8 lg:items-center"
+                  >
+                    <div>
+                      <input type="radio" name="quarto" value="sim" required />
+                      <label for="" class="ml-1">Sim</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" name="quarto" value="nao" required />
+                      <label for="" class="ml-1">Não</label>
+                    </div>
+                  </div>
+
+                  <label for="quarto" class="block"
+                    >Preferências de Hospedagem</label
+                  >
+
+                  <div
+                    class="xs:space-y-3 tablet:space-y-0 tablet:items-center tablet:flex tablet:space-x-8 lg:flex lg:space-x-8"
+                  >
+                    <div class="items-center">
+                      <input type="checkbox" name="preferencias[]" />
+                      <label for="">Piscina</label>
+                    </div>
+
+                    <div class="items-center">
+                      <input type="checkbox" name="preferencias[]" />
+                      <label for="">Wi-Fi</label>
+                    </div>
+
+                    <div class="items-center">
+                      <input type="checkbox" name="preferencias[]" />
+                      <label for="">Garagem</label>
+                    </div>
+
+                    <div class="items-center">
+                      <input type="checkbox" name="preferencias[]" />
+                      <label for="">Suíte</label>
+                    </div>
+                  </div>
+
+                  <div class="pb-3">
+                    <button
+                      type="submit"
+                      class="text-white bg-purple-800 w-full"
+                    >
+                      Solicitar Orçamento
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="">
+        <div
+          class="container xs:max-w-sm tablet:max-w-xl mx-auto lg:max-w-5xl tablet:w-full"
+        >
+          <div class="pt-4 space-y-1">
+            <h3 class="text-xl">Ofertas</h3>
+            <p class="font-thin">Com até 50% de desconto.</p>
+          </div>
+        </div>
+
+        <div
+          class="lg:flex lg:mx-auto lg:max-w-5xl items-center lg:box-border lg:max-h-full lg:justify-between"
+        >
+          <div
+            class="xs:max-w-sm tablet:max-w-xl lg:max-w-5xl h-60 lg:w-full lg:h-80 flex items-end mt-4 mx-auto"
+            style="
+              background: url('/assets/imagens/rio.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: right;
+            "
+          >
+            <span class="font-light text-white bg-black/50 w-full pl-3"
+              >Rio de Janeiro</span
+            >
+          </div>
+
+          <div
+            class="lg:flex lg:flex-wrap lg:max-w-lg lg:max-h-full lg:justify-between lg:mt-3 lg:gap-2"
+          >
+            <div
+              class="xs:max-w-sm tablet:max-w-xl lg:max-w-5xl h-60 lg:w-60 lg:h-36 flex items-end mx-auto mt-4 lg:mt-0"
+              style="
+                background: url('/assets/imagens/goias.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: right;
+              "
+            >
+              <span class="font-light text-white bg-black/50 w-full pl-3"
+                >Goias</span
+              >
+            </div>
+
+            <div
+              class="xs:max-w-sm tablet:max-w-xl lg:max-w-5xl h-60 lg:w-60 lg:h-36 flex items-end mx-auto lg:mt-0 mt-4 lg:mx-0"
+              style="
+                background: url('/assets/imagens/niteroi.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: right;
+              "
+            >
+              <span class="font-light text-white bg-black/50 w-full pl-3"
+                >Rio de Janeiro - Niteroi</span
+              >
+            </div>
+
+            <div
+              class="xs:max-w-sm tablet:max-w-xl lg:max-w-5xl h-60 lg:w-60 lg:h-36 flex items-end mx-auto mt-4 lg:mt-0"
+              style="
+                background: url('/assets/imagens/saopaulo.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: right;
+              "
+            >
+              <span class="font-light text-white bg-black/50 w-full pl-3"
+                >São Paulo</span
+              >
+            </div>
+
+            <div
+              class="xs:max-w-sm tablet:max-w-xl lg:max-w-5xl h-60 lg:w-60 lg:h-36 flex items-end mx-auto mt-4 lg:mx-0 lg:mt-0"
+              style="
+                background: url('/assets/imagens/maranhao.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: right;
+              "
+            >
+              <span class="font-light text-white bg-black/50 w-full pl-3"
+                >Maranhão</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="container xs:max-w-sm tablet:max-w-xl mx-auto lg:max-w-5xl tablet:w-full"
+        >
+          <div class="pt-4 space-y-2">
+            <h3 class="text-xl">Explore a Natureza</h3>
+            <p class="font-thin break-normal">
+              Viaje conosco e veja o melhor que a natureza tem a oferecer.
+            </p>
+          </div>
+
+          <div class="lg:flex lg:space-x-2">
+            <div class="xs:max-w-sm tablet:max-w-xl mx-auto mt-4 lg:w-2/4">
+              <img
+                class="xs:h-60 tablet:h-80 xs:w-full tablet:w-full"
+                src="/assets/imagens/lencol.jpg"
+                alt=""
+              />
+              <div
+                class="bg-white space-y-2 my-1 py-2 pl-3 xs:w-full tablet:w-full"
+              >
+                <h3 class="text-lg">Lençois Maranhense, Brasil</h3>
+                <p class="font-thin">Ida e volta a partir de R$79</p>
+              </div>
+            </div>
+
+            <div class="xs:max-w-sm tablet:max-w-xl mx-auto mt-4 lg:w-2/4">
+              <img
+                class="xs:h-60 tablet:h-80 xs:w-full tablet:w-full"
+                src="/assets/imagens/goias.jpg"
+                alt=""
+              />
+              <div
+                class="bg-white space-y-2 my-1 py-2 pl-3 xs:w-full tablet:w-full"
+              >
+                <h3 class="text-lg">Cachoeira Santa Bárbara, Brasil</h3>
+                <p class="font-thin">Ida e volta por R$139</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-purple-800">
+      <div
+        class="container xs:max-w-sm tablet:max-w-xl py-2 mx-auto lg:max-w-5xl"
+      >
+        <div class="w-2/4 lg:w-full tablet:mx-auto lg:flex lg:justify-between">
+          <div class="flex flex-col space-y-3 pt-3">
+            <h1 class="text-lg text-white font-semibold">Contato</h1>
+            <span class="text-sm text-white font-light flex"
+              ><img
+                class="w-4 h-4 mr-1"
+                src="/assets/imagens/local.png"
+                alt="localizacao"
+              />Rio de Janeiro, RJ</span
+            >
+            <span class="text-sm text-white font-light flex"
+              ><img
+                class="w-4 h-4 mr-1"
+                src="/assets/imagens/telefone.png"
+                alt="telefone"
+              />Telefone: (21) 99999-9999</span
+            >
+            <span class="text-sm text-white font-light flex"
+              ><img
+                class="w-4 h-4 mr-1"
+                src="/assets/imagens/email.png"
+                alt="email"
+              />Email: contato@agencia.com.br</span
+            >
+          </div>
+
+          <div class="flex flex-col space-y-3 lg:ml-auto justify-center pt-3">
+            <h1 class="text-lg text-white font-semibold pt-2 lg:pt-0">
+              Nossas Redes Sociais
+            </h1>
+            <span class="text-sm text-white font-light flex"
+              ><img
+                class="w-4 h-4 mr-1"
+                src="/assets/imagens/fb.png"
+                alt="localizacao"
+              />/AgenciaDeViagem</span
+            >
+            <span class="text-sm text-white font-light flex"
+              ><img
+                class="w-4 h-4 mr-1"
+                src="/assets/imagens/ig.png"
+                alt="telefone"
+              />/AgenciaDeViagem</span
+            >
+            <span class="text-sm text-white font-light flex"
+              ><img
+                class="w-4 h-4 mr-1"
+                src="/assets/imagens/tt.png"
+                alt="email"
+              />/AgenciaDeViagem</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
